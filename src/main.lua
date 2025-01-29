@@ -36,3 +36,14 @@ SMODS.current_mod.config_tab = function()
     }
 end
 
+SMODS.Back {
+    key = 'poker',
+    atlas = 'CardBacks',
+    pos = {
+        x = 0,
+        y = 0
+    },
+    unlocked = true,
+    discovered = true,
+    omit = true
+}
