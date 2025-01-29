@@ -1,3 +1,5 @@
+Poketro = SMODS.current_mod
+
 
 SMODS.Atlas {
     key = "CardBacks",
