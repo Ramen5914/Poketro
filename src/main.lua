@@ -1,6 +1,34 @@
 Poketro = SMODS.current_mod
 
-require 'config_callbacks'
+G.FUNCS.change_joker_spaces = function(args)
+    Poketro.config['joker_spaces'] = args.to_val
+
+    SMODS.save_mod_config(Poketro)
+end
+
+G.FUNCS.change_buy_in_amount = function(args)
+    Poketro.config['buy_in_amount'] = args.to_key
+
+    SMODS.save_mod_config(Poketro)
+end
+
+G.FUNCS.change_rebuy_limit = function(args)
+    Poketro.config['rebuy_limit'] = args.to_val
+
+    SMODS.save_mod_config(Poketro)
+end
+
+G.FUNCS.toggle_share_jokers = function()
+    Poketro.config['share_jokers'] = not Poketro.config['share_jokers']
+
+    SMODS.save_mod_config(Poketro)
+end
+
+G.FUNCS.toggle_share_hand_levels = function()
+    Poketro.config['share_hand_levels'] = not Poketro.config['share_hand_levels']
+
+    SMODS.save_mod_config(Poketro)
+end
 
 SMODS.Atlas {
     key = "CardBacks",
