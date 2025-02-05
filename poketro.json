@@ -1,20 +1,25 @@
 {
-  "id": "poketro",
+  "id": "Poketro",
   "name": "Poketro",
-  "author": [
-    "Ramen5914"
-  ],
+  "display_name": "Poketro",
+  "author": ["Ramen5914"],
   "description": "Adds a multiplayer gamemode that blends aspects from both poker and balatro.",
   "prefix": "pktr",
-  "main_file": "src/main.lua",
+  "main_file": "core.lua",
   "priority": 0,
   "badge_colour": "73C2FBFF",
   "badge_text_colour": "FFFFFF",
-  "display_name": "Poketro",
   "version": "0.0.1~pre-release",
   "dependencies": [
     "Steamodded (>=1.*)",
     "Lovely (>=0.7)",
-    "Balatro (==1.0.1~)"
-  ]
+    "Balatro (==1.0.1~)",
+    "galdur (>=1.2)",
+		"Talisman (>=2.1.0~dev)",
+    "MultiplayerAPI (>=1.0.0)"
+  ],
+  "conflicts": [
+		"Cryptid (<=0.5.3c)",
+		"VirtualizedMultiplayer"
+	]
 }

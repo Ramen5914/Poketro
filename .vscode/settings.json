@@ -1,11 +1,19 @@
 {
   "Lua.diagnostics.globals": [
-    "SMODS"
+    "SMODS",
+    "G",
+    "Game",
+    "Controller",
+    "Event"
   ],
   "Lua.workspace.library": [
     "${3rd}/love2d/library",
-    "C:/Users/spide/AppData/Roaming/Balatro/Mods/smods/src",
-    "D:/Games/Steam/steamapps/common/Balatro/Balatro"
+    "C:/Users/spide/AppData/Roaming/Balatro/Mods/smods",
+    "D:/Games/Steam/steamapps/common/Balatro/Balatro",
+    "C:/Users/spide/AppData/Roaming/Balatro/Mods/lovely",
   ],
-  "editor.tabSize": 4
+  "editor.tabSize": 2,
+  "Lua.diagnostics.disable": [
+    "lowercase-global"
+  ]
 }
